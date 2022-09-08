@@ -4,11 +4,20 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2).
 
     //ENTRADA
+    const primeiroNumero = parseInt(prompt("Insira o primeiro número"));
+    const segundoNumero = parseInt(prompt("Insira o segundo número"));
+    let resultado ;
 
 
     //PROCESSAMENTO
+    if(primeiroNumero>segundoNumero){
+    resultado =  [segundoNumero,primeiroNumero];
+}
+    else{ resultado= [primeiroNumero,segundoNumero];
+    }
 
 
     //SAÍDA
+    document.write(resultado.join(" - "));
     
 </script>
