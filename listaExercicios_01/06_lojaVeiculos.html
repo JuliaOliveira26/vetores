@@ -1,20 +1,77 @@
 <script>
     //Problema: Loja de veículos
     //Crie os seguintes arrays:
-    // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    // ;let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
     // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
-    // let carrosHatch = ["308", "Focus", "i30"];
+    // let carrosHatch = ["308", "Focus", "i30"]
     
     //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
 
     //Apresente a lista final de cada tipo de veículo.
 
     //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+     let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+     let carrosHatch = ["308", "Focus", "i30"];
+
+     const adicionar_1 = prompt(`Informe mais um veículo para sere adicionado na lista`)
+     const identificaVeículo = prompt (`Informe o tipo de veículo que deseja inserir, sendo: SUV| Sedan| Hatch`)
+     const adicionar_2 = prompt(`Informe mais um veículo para sere adicionado na lista`)
+     const identificaVeículo2 = prompt (`Informe o tipo de veículo que deseja inserir, sendo: SUV| Sedan| Hatch`)
+     const adicionar_3 = prompt(`Informe mais um veículos para sere adicionado na lista`)
+     const identificaVeículo3 = prompt (`Informe o tipo de veículo que deseja inserir, sendo: SUV| Sedan| Hatch`)
+    
 
 
     //PROCESSAMENTO
+    const listaAntiga = carrosSUV.join(", ");
+    const listaAntiga_2 = cassosSedan.join(", ")
+    const listaAntiga_3 = carrosHatch.join(", ")
 
-
-    //SAÍDA
-
+    if (adicionar_1 !== "SUV"){
+        carrosSUV.push(adicionar, );
+        document.write(`A lista antiga era ${listaAntiga}! </br>`);
+        document.write(`A lista nova é ${carrosSUV.join(", ")}`);
+    }
+    else if (adicionar_1 !== "Sedan"){
+        cassosSedan.push(adicionar, );
+        document.write(`A lista antiga era ${listaAntiga}! </br>`);
+        document.write(`A lista nova é ${cassosSedan.join(", ")}`);
+    }
+    else if (adicionar_1 !== "Hatch"){
+        carrosHatch.push(adicionar, );
+        document.write(`A lista antiga era ${listaAntiga}! </br>`);
+        document.write(`A lista nova é ${carrosHatch.join(", ")}`);
+    }
+    else if (adicionar_2 !== "SUV"){
+        carrosSUV.push(adicionar, );
+        document.write(`A lista antiga era ${listaAntiga_2}! </br>`);
+        document.write(`A lista nova é ${carrosSUV.join(", ")}`);
+    }
+    else if (adicionar_2 === "Sedan"){
+        cassosSedan.push(adicionar, );
+        document.write(`A lista antiga era ${listaAntiga_2}! </br>`);
+        document.write(`A lista nova é ${cassosSedan.join(", ")}`);
+    }
+    else if (adicionar_2 !== "Hatch"){
+        carrosHatch.push(adicionar, );
+        document.write(`A lista antiga era ${listaAntiga_2}! </br>`);
+        document.write(`A lista nova é ${carrosHatch.join(", ")}`);
+    }
+    else if (adicionar_3 !== "SUV"){
+        carrosSUV.push(adicionar, );
+        document.write(`A lista antiga era ${listaAntiga_3}! </br>`);
+        document.write(`A lista nova é ${carrosSUV.join(", ")}`);
+    }
+    else if (adicionar_3 !== "Sedan"){
+        cassosSedan.push(adicionar, );
+        document.write(`A lista antiga era ${listaAntiga_3}! </br>`);
+        document.write(`A lista nova é ${cassosSedan.join(", ")}`);
+    }
+    else if (adicionar_3 !== "Hatch"){
+        carrosHatch.push(adicionar, );
+        document.write(`A lista antiga era ${listaAntiga_3}! </br>`);
+        document.write(`A lista nova é ${carrosHatch.join(", ")}`);
+    }
+     
 </script>

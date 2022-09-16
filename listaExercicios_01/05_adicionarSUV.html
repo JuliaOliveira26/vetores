@@ -7,15 +7,14 @@
 
     //ENTRADA
     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
-    const adicionar = prompt(`Informe qual elemento deseja retirar da lista , sendo : Tiggo|Sportage|Tucson|Ecosport (${carrosSUV.join(", ")})`).trim();
+    const adicionar = prompt(`Informe qual elemento deseja adicionar da lista , sendo : Tiggo|Sportage|Tucson|Ecosport (${carrosSUV.join(", ")})`).trim();
 
 
     //PROCESSAMENTO
     const listaAntiga = carrosSUV.join(", ");
-    const posicaoCarro = carrosSUV.indexOf(adicionar);
 
-    if (posicaoCarro>= 0){
-        carrosSUV.splice(posicaoCarro, 1);
+    if (adicionar != ""){
+        carrosSUV.push(adicionar, );
         document.write(`A lista antiga era ${listaAntiga}! </br>`);
         document.write(`A lista nova é ${carrosSUV.join(", ")}`);
     }
